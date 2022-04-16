@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    border: 1px solid red;
+    width: 500px;
+    height: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+button{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#new-todo-input{
+    padding: 5px;
+}
+#todo-list{
+    list-style: none;
+    padding: 5px;
+    border: 1px solid red;
+    height: 450px;
+    overflow-y: auto;
+}
+.single-todo{
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+}
+.single-todo-text{
+    flex: 1;
+    text-align: left;
+}
+.single-todo-check{
+    cursor: pointer;
+    margin: 0 5px;
+}
