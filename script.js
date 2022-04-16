@@ -14,6 +14,16 @@ addTodoBtn.addEventListener('click', function () {
     //     console.log(listItem, "<<<<");
     const checkBox = document.createElement('input')
     checkBox.setAttribute('class', 'single-todo-check')
+    
+    checkBox.addEventListener('click', function () {
+        console.log('clicking tht checkbox')
+        const classExist = checkBox.nextElementSibling.className.includes('cross-line')
+        if (classExist) {
+            checkBox.nextElementSibling.classList.remove('cross-line')
+        } else {
+            checkBox.nextElementSibling.classList.add('cross-line')
+        }
+    })
     // checkBox.type = 'checkbox'
     checkBox.setAttribute('type', 'checkbox')
     // console.log(checkBox, '<<<')
@@ -39,4 +49,5 @@ addTodoBtn.addEventListener('click', function () {
     listItem.appendChild(deleteBtn);
 
     ulTodoList.appendChild(listItem)
+    newTodoInput.value = null;
 })

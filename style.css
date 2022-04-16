@@ -2,12 +2,13 @@
     box-sizing: border-box;
 }
 .container{
-    border: 1px solid red;
+    border: 1px solid rgb(220, 217, 217);
     width: 500px;
     height: 600px;
     margin: 20px auto;
     border-radius: 10px;
     padding: 0 20px;
+    text-align: center;
 }
 button{
     padding: 5px 10px;
@@ -19,13 +20,13 @@ button{
 #todo-list{
     list-style: none;
     padding: 5px;
-    border: 1px solid red;
+    border: 1px solid rgb(217, 214, 214);
     height: 450px;
     overflow-y: auto;
 }
 .single-todo{
     display: flex;
-    border: 1px solid red;
+    border: 1px solid rgb(224, 221, 221);
     justify-content: center;
     align-items: center;
     margin: 5px auto;
@@ -37,4 +38,8 @@ button{
 .single-todo-check{
     cursor: pointer;
     margin: 0 5px;
+}
+.cross-line{
+    text-decoration: line-through;
+    color: red;
 }
